@@ -305,13 +305,16 @@ body {
   background-color: #fff;
 }
 .ventures .box h2 {
-  font-size: 22px;
+  font-size: 40px;
   color: #005826;
   font-weight: 900;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .ventures .box p {
   margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
 }
 .ventures .box hr {
   width: 60px;
@@ -319,9 +322,37 @@ body {
   color: #005826;
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .ventures .box h2 {
+    font-size: 30px;
+  }
+  .ventures .box p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .ventures .box .top .line:after {
+    top: 0 !important;
+  }
+}
 .ventures .box .top {
   display: flex;
   align-items: center;
+}
+.ventures .box .top .line {
+  position: relative;
+}
+.ventures .box .top .line:after {
+  content: "";
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  background-color: #005826;
+  top: 9px;
+  right: 20px;
+  border-radius: 3px;
+}
+.ventures .box .top .line2 {
+  padding-left: 15px;
 }
 .ventures .box .top div {
   width: 50%;

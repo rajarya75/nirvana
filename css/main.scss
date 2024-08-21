@@ -387,14 +387,17 @@ body {
         background-color: #fff;
 
         h2 {
-            font-size: 22px;
+            font-size: 40px;
             color: #005826;
             font-weight: 900;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
 
         p {
             margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
 
         }
 
@@ -405,9 +408,45 @@ body {
             opacity: 1;
         }
 
+        @media(max-width: 768px) {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .top {
+                .line:after {
+                    top: 0 !important;
+                }
+            }
+        }
+
         .top {
             display: flex;
             align-items: center;
+
+            .line {
+                position: relative;
+            }
+
+            .line:after {
+                content: "";
+                width: 5px;
+                height: 100px;
+                position: absolute;
+                background-color: #005826;
+                top: 9px;
+                right: 20px;
+                border-radius: 3px;
+            }
+
+            .line2 {
+                padding-left: 15px;
+            }
 
             div {
                 width: 50%;
