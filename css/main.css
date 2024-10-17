@@ -806,4 +806,17 @@ body {
   .home {
     background-position: -470px 0px;
   }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+.whatsapp img {
+  width: 60px;
+}
+@media (max-width: 480px) {
+  .whatsapp img {
+    width: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
